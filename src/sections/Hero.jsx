@@ -1,11 +1,12 @@
 import { BookOpen } from 'lucide-react';
+import Title from '../components/ui/SectionTitle';
 
 export default function Hero() {
     return (
         <section className="flex justify-between">
             <div className="w-1/2 flex flex-col gap-3">
-                <h1 className='text-2xl font-semibold text-indigo-600'>Sobre o Clube do Livro</h1>
-
+                <Title>Sobre o Clube do Livro</Title>
+                
                 <div className="flex flex-col gap-2">
                     <p>
                         Nosso clube do livro é uma comunidade apaixonada pela leitura, onde
