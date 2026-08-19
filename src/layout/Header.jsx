@@ -3,7 +3,7 @@ import Button from '../components/ui/Button';
 
 export default function Header() {
     return (
-        <header className='fixed top-0 left-0 z-50 w-full flex justify-between items-center px-4 py-6 shadow-md'>
+        <header className='fixed top-0 left-0 z-50 w-full flex justify-between items-center px-4 py-6 shadow-md bg-white'>
             <div className='flex gap-1'>
                 <BookOpen size={24} className='text-indigo-600' />
                 <div className='font-medium text-gray-700 hover:text-indigo-600 hover:cursor-pointer'>Clube Bookaholics</div>
