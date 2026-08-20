@@ -1,16 +1,23 @@
+import { Footer } from './layout/Footer'
 import Header from './layout/Header'
+import Books from './sections/Books'
 import Hero from './sections/Hero'
 import HowItWorks from './sections/HowItWorks'
+import JoinSection from './sections/JoinSection'
 
 export default function App() {
   return (
     <>
       <Header />
 
-      <main className='pt-28 flex flex-col gap-6 px-12'>
+      <main id='topo' className='pt-28 flex flex-col gap-24'>
         <Hero />
         <HowItWorks />
+        <Books />
+        <JoinSection />
       </main>
+
+      <Footer />
     </>
   )
 }
