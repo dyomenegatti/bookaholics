@@ -1,21 +1,48 @@
 # 📚 Clube do Livro Bookaholics
 
-Landing page do **Clube do Livro Bookaholics**, desenvolvida para apresentar o clube, mostrar os livros já lidos e permitir que interessados entrem na lista de espera.
+Landing page desenvolvida para o **Clube do Livro Bookaholics**, com o objetivo de apresentar o clube, divulgar os livros já lidos e captar interessados para a lista de espera.
 
-O projeto foi desenvolvido com **React + Vite**, utilizando **Tailwind CSS** para estilização e **Formspree** para o envio dos dados do formulário de inscrição.
+O projeto inclui a criação da **identidade visual**, desenvolvimento da interface responsiva e integração do formulário de inscrição.
+
+**Stack:** React · Vite · JavaScript · Tailwind CSS · Formspree
+
+---
+
+## 🎨 Identidade visual
+
+A identidade visual do **Clube do Livro Bookaholics** foi desenvolvida especialmente para o projeto e serviu como base para a construção da interface.
+
+A paleta de cores e os elementos visuais foram aplicados de forma consistente nos componentes, seções, botões, tags e elementos interativos da landing page.
+
+![Identidade visual do Bookaholics](./public/brand/identidade-visual.png)
+
+### Paleta de cores
+
+| Cor      | Hexadecimal | Aplicação            |
+| -------- | ----------- | -------------------- |
+| Primária | `#63A6A4`   | Elementos principais |
+| Texto    | `#11171B`   | Textos               |
+| Fundo    | `#EDEDED`   | Fundo geral          |
+| Acento 1 | `#E1ADBC`   | Tags e hover         |
+| Acento 2 | `#E5CC94`   | Tags e ícones        |
+| Apoio    | `#85CCCF`   | Seções especiais     |
+
+---
 
 ## ✨ Funcionalidades
 
 * 📖 Apresentação do clube
 * 📚 Carrossel de livros já lidos
 * 📱 Layout responsivo para desktop, tablet e mobile
-* 🔗 Navegação entre seções da página
+* 🔗 Navegação entre as seções da página
 * 📋 Formulário para lista de espera
 * 📧 Envio das inscrições por e-mail através do Formspree
 * 📲 Links para Instagram e TikTok
 * ✉️ Link direto para contato por e-mail
-* 🎨 Interface construída com Tailwind CSS
+* 🎨 Interface desenvolvida com Tailwind CSS
 * ⚡ Hot Module Replacement (HMR) durante o desenvolvimento
+
+---
 
 ## 🛠️ Tecnologias
 
@@ -26,6 +53,8 @@ O projeto foi desenvolvido com **React + Vite**, utilizando **Tailwind CSS** par
 * **Lucide React**
 * **React Icons**
 * **Formspree**
+
+---
 
 ## 📂 Estrutura do projeto
 
@@ -41,7 +70,7 @@ src/
 │   └── books.js
 │
 ├── layout/
-│   └── Footer.jsx
+│   ├── Footer.jsx
 │   └── Header.jsx
 │
 ├── sections/
@@ -56,6 +85,8 @@ src/
 ```
 
 > A estrutura pode variar conforme a evolução do projeto.
+
+---
 
 ## 🚀 Como executar o projeto
 
@@ -96,6 +127,8 @@ Depois, acesse a URL exibida pelo Vite no terminal, normalmente:
 http://localhost:5173
 ```
 
+---
+
 ## 📧 Formulário de inscrição
 
 O formulário da lista de espera utiliza o **Formspree** para processar as inscrições.
@@ -126,6 +159,8 @@ useForm("SEU_FORM_ID")
 
 pelo ID fornecido pelo Formspree.
 
+---
+
 ## 📱 Responsividade
 
 A interface foi desenvolvida pensando em diferentes tamanhos de tela.
@@ -141,9 +176,11 @@ O carrossel de livros adapta automaticamente a quantidade de cards exibidos:
 
 A navegação principal também é adaptada para dispositivos móveis.
 
+---
+
 ## 📚 Carrossel de livros
 
-Os livros são armazenados em um arquivo de dados:
+Os livros são armazenados no arquivo:
 
 ```text
 src/data/books.js
@@ -169,6 +206,8 @@ O carrossel permite:
 * Adaptação responsiva
 * Exibição de quantidade variável de livros
 
+---
+
 ## 🎨 Componentes reutilizáveis
 
 O projeto utiliza componentes de UI para manter a interface consistente e facilitar futuras alterações.
@@ -185,13 +224,19 @@ Componente utilizado para estruturar diferentes conteúdos da página, incluindo
 
 Componente responsável pelos títulos das seções, permitindo diferentes variantes visuais.
 
+---
+
 ## 📦 Scripts disponíveis
+
+### Desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-Executa o ambiente de desenvolvimento.
+Executa o ambiente de desenvolvimento com Vite.
+
+### Build
 
 ```bash
 npm run build
@@ -199,11 +244,15 @@ npm run build
 
 Gera a versão de produção.
 
+### Preview
+
 ```bash
 npm run preview
 ```
 
 Executa localmente a versão de produção gerada pelo Vite.
+
+### Lint
 
 ```bash
 npm run lint
@@ -211,11 +260,15 @@ npm run lint
 
 Executa o ESLint para verificar problemas no código.
 
+---
+
 ## 🌐 Links
 
 * Instagram: https://www.instagram.com/bookaholics.clube/
 * TikTok: https://www.tiktok.com/@bookaholics.clube
 
+---
+
 ## 👩‍💻 Desenvolvimento
 
-Projeto desenvolvido para o **Clube do Livro Bookaholics**.
+Projeto desenvolvido para o **Clube do Livro Bookaholics**, desde a criação da identidade visual até a implementação da landing page responsiva em React.

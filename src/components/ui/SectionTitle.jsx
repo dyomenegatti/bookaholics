@@ -7,8 +7,8 @@ export default function Title({
     const Tag = variant === 'head' ? 'h1' : 'h3';
 
     const styles = variant === 'head'
-        ? 'text-2xl font-semibold text-indigo-600'
-        : 'text-lg font-medium text-indigo-800';
+        ? 'text-2xl font-semibold text-support'
+        : 'text-lg font-medium text-primary';
 
     return (
         <Tag className={`${styles} ${className}`} {...props}>

@@ -26,14 +26,14 @@ export default function JoinSection() {
         return (
             <section
                 id="como-participar"
-                className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-indigo-50 to-indigo-100"
+                className="py-16 px-4 sm:px-6 lg:px-8"
             >
                 <div className="max-w-xl mx-auto text-center bg-white p-8 rounded-2xl shadow-xl">
-                    <h2 className="text-2xl font-bold text-indigo-900 mb-4">
+                    <h2 className="text-2xl font-bold text-text mb-4">
                         Você está na lista!
                     </h2>
 
-                    <p className="text-gray-600">
+                    <p className="text-text/80">
                         Obrigado pelo interesse. Entraremos em contato assim que
                         abrirmos novas vagas para o clube.
                     </p>
@@ -43,7 +43,7 @@ export default function JoinSection() {
     }
 
     return (
-        <section id="como-participar" className="flex flex-col py-16 px-4 sm:px-6 lg:px-8 bg-indigo-100">
+        <section id="como-participar" className="flex flex-col py-16 px-4 sm:px-6 lg:px-8 bg-support/40">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                     <Title variant="subtitle">Como Participar</Title>
@@ -51,11 +51,11 @@ export default function JoinSection() {
                     <Card 
                         className="py-6 px-6 flex flex-col items-center justify-center gap-4"
                     >
-                        <p className="text-gray-700 mb-4 leading-relaxed">
+                        <p className="text-text-text/80 mb-4 leading-relaxed">
                             O clube é <strong>100% gratuito</strong> e acontece exclusivamente pelo <strong>Telegram</strong>.
                         </p>
-                        <p className="text-gray-700 leading-relaxed flex items-center justify-center gap-2">
-                            <Lock className="w-4 h-4 text-indigo-600" />
+                        <p className="text-text-text/80 leading-relaxed flex items-center justify-center gap-2">
+                            <Lock className="w-4 h-4 text-primary" />
                             Para manter a qualidade das discussões, o clube fica fechado durante o mês.
                         </p>
                     </Card>
@@ -67,7 +67,7 @@ export default function JoinSection() {
                     <form onSubmit={handleSubmit} className="w-full space-y-4">
                         <div className="flex flex-col gap-4 w-full">
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                                <label htmlFor="name" className="block text-sm font-medium text-text/80 mb-1">
                                     Nome completo
                                 </label>
                                 <input
@@ -83,7 +83,7 @@ export default function JoinSection() {
                             </div>
 
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                                <label htmlFor="email" className="block text-sm font-medium text-text/80 mb-1">
                                     E-mail
                                 </label>
                                 <input
@@ -99,7 +99,7 @@ export default function JoinSection() {
                             </div>
 
                             <div>
-                                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                                <label htmlFor="phone" className="block text-sm font-medium text-text/80 mb-1">
                                     Telefone (WhatsApp)
                                 </label>
                                 <input
@@ -117,19 +117,17 @@ export default function JoinSection() {
                             <Button
                                 type="submit"
                                 disabled={state.submitting}
-                                className="w-full bg-indigo-600 text-white px-3 py-3 rounded-xl text-sm hover:bg-indigo-800 hover:cursor-pointer"
+                                className="w-full bg-primary text-white px-3 py-3 rounded-xl text-sm hover:bg-support hover:cursor-pointer"
                             >
                                 {state.submitting ? "Enviando..." : "Entrar na lista"}
                             </Button>
                         </div>
                     </form>
-                    <p className="text-xs text-center text-gray-500 mt-4">
+                    <p className="text-xs text-center text-text/70 mt-4">
                         Avisaremos você assim que abrirmos novas vagas!
                     </p>
                 </Card>
             </div>
-
-
         </section>
     )
 }

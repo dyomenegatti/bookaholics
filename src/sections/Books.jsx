@@ -5,7 +5,6 @@ import Title from "../components/ui/SectionTitle";
 import books from "../data/books";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-
 export default function Book({ book }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsPerView, setItemsPerView] = useState(4);
@@ -45,9 +44,9 @@ export default function Book({ book }) {
     };
 
     return (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-indigo-50">
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                <Title variant="subtitle" className='text-center'>Livros Lidos</Title>
+                <Title variant="subtitle" className='text-center pb-4'>Livros Lidos</Title>
                     
                 <div className="relative">
                     <button
@@ -55,7 +54,7 @@ export default function Book({ book }) {
                         className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-indigo-50 transition-colors"
                         aria-label="Anterior"
                     >
-                        <ChevronLeft className="w-6 h-6 text-indigo-600" />
+                        <ChevronLeft className="w-6 h-6 text-primary" />
                     </button>
 
                     <div className="overflow-hidden">
@@ -69,7 +68,7 @@ export default function Book({ book }) {
                                 <Card
                                     key={index}
                                     variant="secondary"
-                                    className="flex w-72 h-[500px] flex-col overflow-hidden"
+                                    className="flex w-70 h-[500px] flex-col overflow-hidden"
                                     style={{ minWidth: `${100 / itemsPerView}%` }}
                                 >
                                     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow h-full flex flex-col">
@@ -84,11 +83,11 @@ export default function Book({ book }) {
                                                 {book.title}
                                             </Title>
 
-                                            <p className="text-base text-gray-600">
+                                            <p className="text-base text-text/80">
                                                 {book.author}
                                             </p>
 
-                                            <span className="mt-auto w-fit rounded-full bg-indigo-100 px-3 py-1 text-sm text-indigo-700">
+                                            <span className="mt-auto w-fit rounded-full bg-support/10 px-3 py-1 text-sm text-support">
                                                 {book.date}
                                             </span>
                                         </div>
@@ -103,7 +102,7 @@ export default function Book({ book }) {
                         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-indigo-50 transition-colors"
                         aria-label="Próximo"
                     >
-                        <ChevronRight className="w-6 h-6 text-indigo-600" />
+                        <ChevronRight className="w-6 h-6 text-primary" />
                     </button>
                 </div>
 
@@ -114,8 +113,8 @@ export default function Book({ book }) {
                         onClick={() => setCurrentIndex(index * itemsPerView)}
                         className={`w-2 h-2 rounded-full transition-all ${
                             Math.floor(currentIndex / itemsPerView) === index
-                            ? 'bg-indigo-600 w-8'
-                            : 'bg-indigo-300'
+                            ? 'bg-primary w-8'
+                            : 'bg-support'
                         }`}
                         aria-label={`Ir para slide ${index + 1}`}
                         />

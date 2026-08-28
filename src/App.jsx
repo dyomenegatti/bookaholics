@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Header />
 
-      <main id='topo' className='pt-28 flex flex-col gap-24'>
+      <main id='topo' className='pt-28 flex flex-col gap-24 bg-background/30'>
         <Hero />
         <HowItWorks />
         <Books />
