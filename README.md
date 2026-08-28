@@ -8,7 +8,7 @@ O projeto inclui a criação da **identidade visual**, desenvolvimento da interf
 
 ---
 
-## 🎨 Identidade visual
+## Identidade visual
 
 A identidade visual do **Clube do Livro Bookaholics** foi desenvolvida especialmente para o projeto e serviu como base para a construção da interface.
 
@@ -16,35 +16,24 @@ A paleta de cores e os elementos visuais foram aplicados de forma consistente no
 
 ![Identidade visual do Bookaholics](./public/brand/identidade-visual.png)
 
-### Paleta de cores
+---
 
-| Cor      | Hexadecimal | Aplicação            |
-| -------- | ----------- | -------------------- |
-| Primária | `#63A6A4`   | Elementos principais |
-| Texto    | `#11171B`   | Textos               |
-| Fundo    | `#EDEDED`   | Fundo geral          |
-| Acento 1 | `#E1ADBC`   | Tags e hover         |
-| Acento 2 | `#E5CC94`   | Tags e ícones        |
-| Apoio    | `#85CCCF`   | Seções especiais     |
+## Funcionalidades
+
+* Apresentação do clube
+* Carrossel de livros já lidos
+* Layout responsivo para desktop, tablet e mobile
+* Navegação entre as seções da página
+* Formulário para lista de espera
+* Envio das inscrições por e-mail através do Formspree
+* Links para Instagram e TikTok
+* Link direto para contato por e-mail
+* Interface desenvolvida com Tailwind CSS
+* Hot Module Replacement (HMR) durante o desenvolvimento
 
 ---
 
-## ✨ Funcionalidades
-
-* 📖 Apresentação do clube
-* 📚 Carrossel de livros já lidos
-* 📱 Layout responsivo para desktop, tablet e mobile
-* 🔗 Navegação entre as seções da página
-* 📋 Formulário para lista de espera
-* 📧 Envio das inscrições por e-mail através do Formspree
-* 📲 Links para Instagram e TikTok
-* ✉️ Link direto para contato por e-mail
-* 🎨 Interface desenvolvida com Tailwind CSS
-* ⚡ Hot Module Replacement (HMR) durante o desenvolvimento
-
----
-
-## 🛠️ Tecnologias
+## Tecnologias
 
 * **React**
 * **Vite**
@@ -56,7 +45,7 @@ A paleta de cores e os elementos visuais foram aplicados de forma consistente no
 
 ---
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 src/
@@ -88,7 +77,7 @@ src/
 
 ---
 
-## 🚀 Como executar o projeto
+## Como executar o projeto
 
 ### Pré-requisitos
 
@@ -129,7 +118,7 @@ http://localhost:5173
 
 ---
 
-## 📧 Formulário de inscrição
+## Formulário de inscrição
 
 O formulário da lista de espera utiliza o **Formspree** para processar as inscrições.
 
@@ -161,7 +150,7 @@ pelo ID fornecido pelo Formspree.
 
 ---
 
-## 📱 Responsividade
+## Responsividade
 
 A interface foi desenvolvida pensando em diferentes tamanhos de tela.
 
@@ -178,7 +167,7 @@ A navegação principal também é adaptada para dispositivos móveis.
 
 ---
 
-## 📚 Carrossel de livros
+## Carrossel de livros
 
 Os livros são armazenados no arquivo:
 
@@ -208,7 +197,7 @@ O carrossel permite:
 
 ---
 
-## 🎨 Componentes reutilizáveis
+## Componentes reutilizáveis
 
 O projeto utiliza componentes de UI para manter a interface consistente e facilitar futuras alterações.
 
@@ -226,7 +215,7 @@ Componente responsável pelos títulos das seções, permitindo diferentes varia
 
 ---
 
-## 📦 Scripts disponíveis
+## Scripts disponíveis
 
 ### Desenvolvimento
 
@@ -262,13 +251,4 @@ Executa o ESLint para verificar problemas no código.
 
 ---
 
-## 🌐 Links
-
-* Instagram: https://www.instagram.com/bookaholics.clube/
-* TikTok: https://www.tiktok.com/@bookaholics.clube
-
----
-
-## 👩‍💻 Desenvolvimento
-
-Projeto desenvolvido para o **Clube do Livro Bookaholics**, desde a criação da identidade visual até a implementação da landing page responsiva em React.
+*Code by [Dyovana Menegatti](https://www.linkedin.com/in/dyomenegatti/).*
